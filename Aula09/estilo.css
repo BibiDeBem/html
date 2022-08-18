@@ -1,0 +1,90 @@
+/* CSS do projeto*/
+body{
+	background-color: lightGray;	
+	font-family: Verdana
+}
+header{
+	background-image: linear-gradient(white, lightGray, purple, black); 
+	padding: 20 px;
+	text-align: center;
+	width: 100%;
+	float: center;
+}
+	
+	/*
+	background-image:radial-gradient(lightGray 33%, blue 33%, black 34%);
+	height: 180px;
+	color: white;*/
+	
+
+nav{
+	background-color: #333;
+	width: 100%;
+	float: left;
+	display: flex;
+	justify-content: center;
+}
+.menu ul{
+	padding-left; 0px
+}
+.menu ul li{
+	list-style-type: none;
+	display: inline;
+	float: left;
+}
+.menu a{
+	padding: 15px 15px;
+	display: block; /*cria um bloco em torno da tag a*/
+	color: #f2f2f2;
+	text-align:center;
+	text-decoration: none;
+}
+.menu a:hover{
+	background-color: rgb(207, 66, 66);
+	transition: 0.5s;
+	
+}
+.tbPreço{
+	width: 100%;
+	border-collapse: collapse; /*formatação na primeira linha*/
+	text-align: center;
+}
+.tbPreço tr{
+	padding: 8px;
+	border-bottom: 1px solid darkblue;
+}
+.tbPreço th{
+	color: darkblue;
+	font-size: 20px;
+}
+.divNotas {
+	overflow-x: auto;
+}
+.tbNotas{
+	font-family: arial;
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+}
+.tbNotas td, th{
+	border: 1px solid black;
+	padding: 8px;
+}
+section{
+	border:ridge;
+	width: 50%;
+	margin: auto;
+}
+.tbNotas tr:nth-child(even){/*even coloca cor nas linhas par - para limpar linhas impar deve colocar odd*/
+	background-color: gray;
+}
+.tbNotas tr:hover{
+	background-color: lightBlue;
+}
+.tbNotas th{
+	padding-top:12px;
+	padding-bottom: 12px;
+	background-color: darkblue;
+	color: white;
+}
+

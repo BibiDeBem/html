@@ -1,0 +1,74 @@
+/* CSS do projeto*/
+body{
+	background-color: lightgray;	
+}
+header{	
+	background-color: blue;
+	color:white;
+	font-family: Verdana;
+	margin: Auto;
+	height: 200px;
+	text-align: center;
+}
+header h1{
+	padding: 70px;	
+}
+
+/* personalizar o nav*/
+.menu{
+	background-color: gray;
+	border: 3px double blue;
+	color: blue;
+	text-align: center;
+	text-family: Arial Black;
+}
+.itenMenu{
+	list-style-type: none;
+	display: inline;
+	padding: 1.5%;
+}
+.itenMenu a{
+	text-decoration: none;
+	color: wheat;
+}
+.artigo{
+	margin-left: 50px;
+	margin-right: 30px;
+	margin-top: 10px;
+	padding-top: 10px;
+	text-align: justify;
+	text-indent: 2rem;
+}
+.figura{
+	margin-left: 320px;	
+}
+.figura img{
+	width: 50%;	
+	height: 50%;
+	border-radius: 20%;
+	border: 3px solid orange;
+	margin-left: auto;
+	display: block;
+}
+.sepia{
+	filter: sepia(80%);
+	-webkit-box-reflect: left; /* espelhar mantendo a imagem original*/
+	/*transform: scaleX(-1);*//* espelhar a própria imagem original substituindo a original*/
+}
+.desfocado{
+	filter: blur(4px);
+}
+.sombra{
+	filter: drop-shadow(8px 15px 6px black);
+}
+.rodape{	
+	height: 80px;
+	margin: auto;
+	background-color: blue;
+	text-align: center;
+	color: white;
+}
+.rodape p{
+	padding: 15px;
+}
+	

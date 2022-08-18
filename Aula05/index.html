@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt.br"><!-- Definição da página como html -->
+	<head><!-- Cabeça -->
+		<meta charset="UTF-8"><!-- meta dado( resumo de informação uma maior) -->
+		<title>UC12 - Usando CSS</title>
+		<meta name="description" content="UC12 - Usando CSS">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="Bibiana de Bem">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		rel="stylesheet"><!-- google, material icons -->
+		<link rel="preconnect" href="https://fonts.googleapis.com"><!-- import api da google -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!-- import api da google -->
+		<link href="https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap" rel="stylesheet"><!-- import da fonte do google -->
+		<style type="text/css">
+		body{ /* todo comportamento da página em css*/
+				background-image: url("./imagens/senac-rs.jpg");
+				background-repeat: no-repeat;
+				background-position: right;
+				color: #daea6b;
+				font-family: verdana;
+			}
+			h1{ /* títulos */
+			text-align: center;
+			text-decoration: underline;
+			font-style: italic;
+			color: green;
+			font-family: Sofia;
+			}
+			p{ /* texto do corpo do formatando texto */
+			text-align: justify;
+			font-family: Lucida Console;
+			text-indent: 50px;
+			letter-spacing: 3px;
+			}
+			div{
+				margin: 25px 50px 75px 30px; /* Definir as margens da div, sentido horário, começando pelo superior espaçamento entre os componentes*/
+				}
+			.conteudo{
+				border: 10px dotted orange;
+				padding-left: 50px; /* Definir os padding dentro da div, sentido horário, começando pelo superior, espaçamento dentro dos componentes*/
+				background-color: rgb(255, 99, 71, 0.7)
+				}
+			.rodape p{
+				background-color: gray;
+				font-family: Cursive;			
+			}
+			.destaque{
+				text-transform: capitalize;
+				color: aqua;
+				text-decoration: overline
+			}
+			h2{
+			font-family: Charm, Brush Script MT;
+			}
+			
+			
+		</style>
+		<!-- Código CSS, comentários /* CSS Usando TAG html*/ -->
+	</head>
+	<body id="home">
+			
+		<div class="conteudo"> <!-- Como se fosse o JPanel (caixinha)-->
+			<h1>
+				<span class="material-icons">home</span>
+				Aula 05 - Usando CSS
+				</h1>
+			<p>
+				As experiências acumuladas demonstram que o uso de servidores em datacenter estende a funcionalidade da aplicação da confidencialidade imposta pelo sistema de senhas. Por conseguinte, a consolidação das infraestruturas possibilita uma melhor disponibilidade das janelas de tempo disponíveis.</br>
+			</p>
+			<p>
+				No nível organizacional, a lógica proposicional facilita a criação dos equipamentos pré-especificados. O cuidado em identificar pontos críticos no entendimento dos fluxos de processamento minimiza o gasto de energia dos métodos utilizados para localização e correção dos erros.</br>
+			</p>
+			<p>
+				Evidentemente, o índice de utilização do sistema assume importantes níveis de uptime das direções preferenciais na escolha de algorítimos.
+				</br></br>
+			</p>
+			<h1>Usando Formatos	</h1>
+			<h2>Conhecendo Estilo</h2>
+			<p class="destaque" >Destaque de Texto!</p>
+			<h3>Título de Destaque</h3>
+		</div>
+		<div class="rodape">
+			<h3>Rodapé</h3>
+			<p>&copy; Desenvolvido por Bibiana de Bem. </p>
+		</div>
+	</body>
+</html>

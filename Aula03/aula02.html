@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt.br"><!-- Definição da página como html -->
+	<head>
+		<meta charset="UTF-8"><!-- meta dado( resumo de informação uma maior) -->
+		<title>UC12 - Aula02</title>
+		<meta name="description" content="UC12 - Aula02">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="Bibiana de Bem">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Código CSS, comentários /* CSS Usando TAG html*/ -->
+		<style> /* comentário dento do CSS */
+			/* comentário dento do CSS */
+			
+			
+			
+			body{ /* todo comportamento da página */
+				background-color: #167ac6;
+				color: #daea6b;
+				font-family: verdana;
+			}
+			
+			
+			
+			p{ /* texto do corpo do formatando texto */
+			margin-left: 20px;
+			margin-right: 20px;
+			}
+			
+			
+			
+			h2{ /* títulos */
+			color: maroon;
+			font-family: Sofia;
+			}
+			
+			
+			
+			footer{ /* rodapé */
+				background-color: gray;
+			}
+			
+			
+			
+			ul{
+				list-style: none; /* tira os pontos da lista*/
+			}
+			
+			
+			
+			
+			
+			nav a{ /* formata a página inteira */
+				display: inline-block;
+				font-size: 1em; /*font-size: 1em;  em são medidas relativas o dobro do tamanho atual*/
+				background: white;
+				padding: 10px 30px;
+				text-transform: uppercase;
+				text-decoration: none; /* text-decoration: none; tira o sublinhado da lista*/
+				font-weight: 500;
+				margin-top 10px;
+				color: #111;
+				letter-spacing: 2px;
+				transition:0.2s;		
+			}
+			
+			
+			
+			nav a:hover{ /* modifica o tamanho da lista (apenas a lista)*/
+				letter-spacing: 6px;
+				color: yellow;
+				background: black;
+				
+			}
+			
+			
+			/* Estilo sendo aplicado pelo id */			
+			#texto{ /* para editar uma única tag especifica*/
+			 width:40%;
+			 color: red;
+			 border: solid 2px yellow;
+			 margin-left: 2%;
+			 padding-left: 2%;
+			 padding-right: 2%;
+			 text-align: justify;
+			 background-color: #FEFEFE;
+			 }
+			 
+			 
+			 
+			 #galeria{ /* # para editar uma única tag especifica*/
+				width: 40%;
+				background-color: pink;
+				float: right;
+				overflow: auto;
+			 }
+			 
+			 
+			 /* Estilo usando class */			 
+			 .cabeca{ /* para editar mais de uma tag*/
+			 font-family: Brush Script MT;
+			 font-size: 30px;
+			 text-align: center;
+			 }
+		</style>
+	</head><!-- Cabeça -->
+	<body id="home">
+		<header class="cabeca"><!-- Cabeçalho -->
+			<h1>Conhecendo HTML 5</h1>
+		</header>
+	
+		<nav> <!-- nome do corpo da página formatado no "style-nav"-->
+			<ul><!-- Lista não ordenada -->
+				<li>
+					<a href="index.html">Home</a> <!-- nome da lista a formatado no "style-nav a"-->
+				<li>
+				</li><!-- Lista -->
+				<li>
+					<a href="#externo">Externo</a>
+				</li>
+				<li>
+					<a href="http://www.google.com" target="_blank">Google</a>
+				</li>
+			</ul>
+		</nav><!-- Construção de menu -->
+		<section><!-- secão da página ou main-->
+			<div id="galeria"><!-- Como se fosse o JPanel (caixinha)-->
+				<h2>Imagem</h2>
+				<h3>Tag img</h3>
+				<img src="./imagens/imgPequena.jpg" alt="Cozinha" style="width:auto;"><!-- Carregar imagem -->
+				<br/>
+				<h3>TAG Picture</h3>
+				<picture><!-- Tratar imagens responsivas, conforme resolução -->
+					<source media="(min-width:650px)" srcset="./imagens/caminho.jpg"><!-- Modificação das Imagens -->
+					<source media="(min-width:465px)" srcset="./imagens/imgMedia.jpg"><!-- Modificação das Imagens -->
+					<img src="./imagens/imgPequena.jpg" alt="Flowers" style="width:auto;"><!-- Imagem principal -->
+				</picture>	
+			</div>
+			<div id= "texto">
+				<h2>Formatando Texto</h2>
+				<p><!-- Paragrafo -->
+				<Strong> Caros amigos</Strong><!-- Negrito -->, a infinita diversidade da realidade única acarreta um processo de reformulação e modernização da <em>fundamentação metafísica</em><!-- Itálico --> das representações. <ins>Por outro lado</ins><!-- Sublinhado -->, o conceito de diáthesis e os princípios fundamentais de rhytmos e arrythmiston limita as atividades das condições epistemológicas e cognitivas exigidas.
+				<br/><!-- Quebra de linha -->
+				<sub>google.com.br</sub> <!-- Texto pequeno na parte inferior da linha -->
+				<br/>
+				Log <sub> a</sub>b = x (Logaritimo)
+				<br/>
+				A área total é de 5m<sup>2</sup> <!-- Texto pequeno na parte superior da linha -->
+				</p>
+			</div> <!-- também organiza o tamanho do texto conforme a página -->
+			<div id="externo">
+				<h2>Incorporando elementos externos</h2>
+				<h3>YouTube</h3>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/IeNoCUNFzFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<h3>GoogleMaps</h3>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.791776943606!2d-51.2210815842785!3d-30.04283103816326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951978567f17f28d%3A0x2c2c5272bacf4d3a!2sSenac%20Tech!5e0!3m2!1spt-BR!2sbr!4v1660143066394!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</section>
+		<footer>
+			<span>&copy;</span> 2022 Todos os direitos reservados
+		</footer>
+	</body>
+</html>
